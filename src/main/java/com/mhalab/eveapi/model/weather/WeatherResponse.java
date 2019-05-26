@@ -12,6 +12,7 @@ public class WeatherResponse {
     private Clouds clouds;
     private long dt;
     private Sys sys;
+    private int timezone;
     private long id;
     private String name;
     private int cod;
@@ -128,5 +129,13 @@ public class WeatherResponse {
 
     public void setCod(int cod) {
         this.cod = cod;
+    }
+
+    public int getTimezone() {
+        return timezone;
+    }
+
+    public void setTimezone(int timezone) {
+        this.timezone = timezone;
     }
 }
