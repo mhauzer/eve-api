@@ -6,5 +6,6 @@ public enum Skill {
     DATE,
     TIME,
     TASK,
-    ECHO
+    ECHO,
+    VERSION
 }

@@ -33,7 +33,8 @@ public class ActuatorService {
         skills.put(Skill.TIME, new TimeAction());
         skills.put(Skill.DATE, new DateAction());
         skills.put(Skill.ECHO, new EchoAction());
-        skills.put(Skill.TASK, new TaskManagerAction(""));
+        skills.put(Skill.TASK, new TaskManagerAction("http://localhost:8080/api/"));
+        skills.put(Skill.VERSION, new VersionAction());
 
         wordmap.put("pogoda", Skill.WEATHER);
         wordmap.put("aura", Skill.WEATHER);
@@ -42,6 +43,7 @@ public class ActuatorService {
         wordmap.put("dzień", Skill.DATE);
         wordmap.put("data", Skill.DATE);
         wordmap.put("zadanie", Skill.TASK);
+        wordmap.put("wersja", Skill.VERSION);
     }
 
     private Skill understand(final String input) {
